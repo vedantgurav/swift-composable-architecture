@@ -20,17 +20,17 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/apple/swift-collections", from: "1.1.0"),
     .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
-    .package(url: "https://github.com/apple/swift-syntax", "509.0.0"..<"511.0.0"),
+    .package(url: "https://github.com/sjavora/swift-syntax-xcframeworks.git", "509.0.0"..<"511.0.0"),
     .package(url: "https://github.com/google/swift-benchmark", from: "0.1.0"),
     .package(url: "https://github.com/pointfreeco/combine-schedulers", from: "1.0.0"),
-    .package(url: "https://github.com/pointfreeco/swift-case-paths", from: "1.3.0"),
+    .package(url: "https://github.com/vedantgurav/swift-case-paths", branch: "use"),
     .package(url: "https://github.com/pointfreeco/swift-concurrency-extras", from: "1.1.0"),
     .package(url: "https://github.com/pointfreeco/swift-custom-dump", from: "1.3.0"),
-    .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.1.0"),
+    .package(url: "https://github.com/vedantgurav/swift-dependencies", branch: "use"),
     .package(url: "https://github.com/pointfreeco/swift-identified-collections", from: "1.0.0"),
     .package(url: "https://github.com/pointfreeco/swift-macro-testing", from: "0.2.0"),
-    .package(url: "https://github.com/pointfreeco/swift-perception", from: "1.1.7"),
-    .package(url: "https://github.com/pointfreeco/swiftui-navigation", from: "1.1.0"),
+    .package(url: "https://github.com/vedantgurav/swift-perception", branch: "use"),
+    .package(url: "https://github.com/vedantgurav/swift-navigation", branch: "use"),
     .package(url: "https://github.com/pointfreeco/xctest-dynamic-overlay", from: "1.1.0"),
   ],
   targets: [
@@ -47,7 +47,7 @@ let package = Package(
         .product(name: "IdentifiedCollections", package: "swift-identified-collections"),
         .product(name: "OrderedCollections", package: "swift-collections"),
         .product(name: "Perception", package: "swift-perception"),
-        .product(name: "SwiftUINavigationCore", package: "swiftui-navigation"),
+        .product(name: "SwiftUINavigationCore", package: "swift-navigation"),
         .product(name: "XCTestDynamicOverlay", package: "xctest-dynamic-overlay"),
       ],
       resources: [
@@ -63,8 +63,7 @@ let package = Package(
     .macro(
       name: "ComposableArchitectureMacros",
       dependencies: [
-        .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
-        .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),
+        .product(name: "SwiftSyntaxWrapper", package: "swift-syntax-xcframeworks"),
       ]
     ),
     .testTarget(

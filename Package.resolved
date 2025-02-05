@@ -30,10 +30,10 @@
     {
       "identity" : "swift-case-paths",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/pointfreeco/swift-case-paths",
+      "location" : "https://github.com/vedantgurav/swift-case-paths",
       "state" : {
-        "revision" : "8d712376c99fc0267aa0e41fea732babe365270a",
-        "version" : "1.3.3"
+        "branch" : "use",
+        "revision" : "8f7e3902eabbbba9870307752c43ec59c204b394"
       }
     },
     {
@@ -75,10 +75,10 @@
     {
       "identity" : "swift-dependencies",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/pointfreeco/swift-dependencies",
+      "location" : "https://github.com/vedantgurav/swift-dependencies",
       "state" : {
-        "revision" : "d3a5af3038a09add4d7682f66555d6212058a3c0",
-        "version" : "1.2.2"
+        "branch" : "use",
+        "revision" : "578f20a3f06fcb5bf001f56bbf911f5ea388a5c0"
       }
     },
     {
@@ -118,12 +118,21 @@
       }
     },
     {
+      "identity" : "swift-navigation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vedantgurav/swift-navigation",
+      "state" : {
+        "branch" : "use",
+        "revision" : "fae84cb7d769b91716db82cf43a2e51fc9602bbe"
+      }
+    },
+    {
       "identity" : "swift-perception",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/pointfreeco/swift-perception",
+      "location" : "https://github.com/vedantgurav/swift-perception",
       "state" : {
-        "revision" : "8e8ca36c02abc7775a3ab81f9468c0df5fe22c2c",
-        "version" : "1.1.7"
+        "branch" : "use",
+        "revision" : "9c7c62450312c86cd306154f114d92917931b035"
       }
     },
     {
@@ -145,12 +154,12 @@
       }
     },
     {
-      "identity" : "swiftui-navigation",
+      "identity" : "swift-syntax-xcframeworks",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/pointfreeco/swiftui-navigation",
+      "location" : "https://github.com/sjavora/swift-syntax-xcframeworks.git",
       "state" : {
-        "revision" : "2ec6c3a15293efff6083966b38439a4004f25565",
-        "version" : "1.3.0"
+        "revision" : "c98f5094499d4a91a35f30c53f3c5bf6bd74040e",
+        "version" : "509.0.2"
       }
     },
     {
